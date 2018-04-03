@@ -60,7 +60,7 @@ table {
 </html>
 `], { type: 'text/html' })
   var win = $window({
-    url: URL.createObjectUrl(blob),
+    url: URL.createObjectURL(blob),
     width: 400,
     height: 225,
     resizable: false
