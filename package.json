@@ -1,0 +1,19 @@
+{
+  "fireplace": {
+    "author": "robbie0630",
+    "description": "warm your desktop, warm your heart",
+    "runAtStartup": false,
+    "leCompatible": true,
+    "version": "^0.0.1",
+    "scriptlets": [
+      {
+        "name": "fireplace.js",
+        "execute": true
+      },
+      {
+        "name": "unfireplace.js",
+        "uninstaller": true
+      }
+    ]
+  }
+}
