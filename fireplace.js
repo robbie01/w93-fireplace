@@ -78,6 +78,7 @@ table {
       console.log(this)
     },
     icon: 'https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/129/fire_1f525.png',
-    name: 'Fireplace'
+    name: 'Fireplace',
+    secretBlobURL: url
   }
 })()
