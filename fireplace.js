@@ -58,6 +58,7 @@ table {
   </head>
   <body>
     <img src="https://i.giphy.com/media/ZHXz9MZbJI1YA/giphy.gif">
+    <audio src="https://www.freesoundeffects.com/music_5342690989307_filed3d9446802a44259755d38e6d163e820.wav" autoplay loop></audio>
   </body>
 </html>
 `], { type: 'text/html' })
