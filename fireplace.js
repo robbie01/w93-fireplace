@@ -1,12 +1,9 @@
 (function() {
-  var win = $window({
-    url: "https://i.giphy.com/media/ZHXz9MZbJI1YA/giphy.gif",
-    width: 400,
-    height: 225,
-    resizable: false
-  })
-  var sty = win.createElement('style')
-  sty.innerHTML = `
+  var blob = new Blob([`
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <style>
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,6 +52,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-`
-  win.document.head.appendChild(sty)
+    </style>
+  </head>
+  <body>
+    <img src="https://i.giphy.com/media/ZHXz9MZbJI1YA/giphy.gif">
+  </body>
+</html>
+`], { type: 'text/html' })
+  var win = $window({
+    url: URL.createObjectUrl(blob),
+    width: 400,
+    height: 225,
+    resizable: false
+  })
 })()
