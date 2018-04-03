@@ -62,14 +62,21 @@ table {
   </body>
 </html>
 `], { type: 'text/html' })
-  var win = $window({
-    url: URL.createObjectURL(blob),
+  var url = URL.createObjectURL(blob)
+  le._apps.fireplace = {
+    exec() {
+      var win = $window({
+        url: url,
+        icon: 'https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/129/fire_1f525.png',
+        title: 'Fireplace',
+        width: 400,
+        height: 225,
+        resizable: false,
+        maximizable: false,
+        minimizable: false
+      })
+    },
     icon: 'https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/129/fire_1f525.png',
-    title: 'Fireplace',
-    width: 400,
-    height: 225,
-    resizable: false,
-    maximizable: false,
-    minimizable: false
-  })
+    name: 'Fireplace'
+  }
 })()
