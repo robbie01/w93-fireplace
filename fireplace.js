@@ -68,6 +68,7 @@ table {
     width: 400,
     height: 225,
     resizable: false,
-    maximizable: false
+    maximizable: false,
+    minimizable: false
   })
 })()
