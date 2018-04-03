@@ -65,6 +65,7 @@ table {
     title: 'Fireplace',
     width: 400,
     height: 225,
-    resizable: false
+    resizable: false,
+    maximizable: false
   })
 })()
